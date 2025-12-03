@@ -44,6 +44,11 @@
             letter-spacing: 1px;
         }
 
+        h4 {
+            font-size: 14px;
+            /* margin-bottom: 10px; */
+        }
+
         p,
         li {
             line-height: 1.7;
@@ -67,8 +72,8 @@
         }
 
         .btn-outline {
-            border: 2px solid #6c5ce7;
-            color: #6c5ce7;
+            border: 2px solid #e13fe9;
+            color: #5a71d0;
         }
 
         .footer {
@@ -159,6 +164,55 @@
                 width: 100%;
                 text-align: center;
             }
+
+            .profile-img {
+                width: 150px;
+                /* change size as needed */
+                height: 150px;
+                /* keep width & height equal */
+                object-fit: cover;
+                /* crop nicely */
+                border-radius: 50%;
+                /* makes the image circular */
+                border: 3px solid #fff;
+                /* optional border */
+            }
+
+            .button-row {
+                display: flex;
+                gap: 15px;
+                /* space between buttons */
+                margin-top: 20px;
+            }
+
+            .btn.btn-outline {
+                padding: 12px 20px;
+                border: 2px solid #fff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: 600;
+                transition: 0.3s ease;
+            }
+
+            .btn.btn-outline:hover {
+                background: #fff;
+                color: #000;
+            }
+
+            .center-image {
+    text-align: center;      /* centers inline elements */
+    margin-top: 20px;
+}
+
+.center-image img {
+    display: inline-block;
+    max-width: 100%;         /* responsive */
+    height: auto;
+}
+
+
+
         }
     </style>
 </head>
@@ -169,11 +223,16 @@
 
         <!-- LEFT COLUMN -->
         <div>
-            <img src="sunill.png" alt="Sunil Kumar">
+            <!-- <img src="bgsunil.png" alt="Sunil Kumar"> -->
+            <!-- <img src="bgsunil.png" alt="Sunil Kumar" class="profile-img"> -->
+            <!-- <div class="center-image">
+                <img src="bgsunil.png" alt="Sunil Kumar">
+            </div> -->
 
             <h1>Sunil Kumar</h1>
-            <p><strong>Associate Software Developer : Utah Tech Lab Pvt Ltd</strong></p>
 
+            <p>Associate Software Developer at Utah Tech Lab Pvt Ltd <br>07541951162 <br>sunilkumarsahibganj@gmail.com
+            </p>
             <h2>Education</h2>
             <p>
                 <strong>Master of Computer Application (MCA)</strong><br>
@@ -224,38 +283,69 @@
         <div>
             <h2>Executive Summary</h2>
             <p>
-                IT professional with 5 years of mobile app development experience, specializing
-                in Flutter and Dart, UI/UX, and API integration across Android and iOS platforms.
+                IT professional with 5+ years of experience in mobile application
+                development, specializing in Flutter and Dart, with a strong background in
+                UI/UX design and RESTful API implementation across Android and iOS..
             </p>
 
             <ul>
-                <li>Strong OOPs concepts and clean architecture</li>
-                <li>Expert in Flutter for scalable mobile apps</li>
-                <li>Experienced with REST APIs and JSON</li>
-                <li>UI implementation from Adobe XD / Figma</li>
-                <li>AWS Cognito authentication, Branch.io</li>
-                <li>State management using GetX & BLoC</li>
-                <li>Basic knowledge of JavaScript, HTML/CSS</li>
+                <li>Hands-on experience with OOP concepts, Exception Handling,
+                    Collections, and other core fundamentals</li>
+                <li>Proficient in Dart and Flutter Framework for developing beautiful and
+                    responsive mobile applications (Android/iOS)</li>
+                <li>Experience in integrating REST APIs into Flutter apps for dynamic and
+                    functional features</li>
+                <li>Good knowledge of using Adobe XD design files to implement UI in
+                    Flutter</li>
+                <li>Experienced with AWS Cognito for user authentication and Branch.io for
+                    implementing deep linking.</li>
+                <li>Proficient in Flutter state management using Bloc and Get</li>
+                <li>Basic experience in web development using React JS, JavaScript,
+                    HTML/CSS, and Bootstrap.</li>
+                <li>Basic understanding of C/C++ and Python programming languages.</li>
+                <li>Self-motivated, creative, and quick to learn and adapt to new
+                    technologies.
+                </li>
             </ul>
 
             <h2>Projects</h2>
 
             <p><strong>1. The Essential Life – Oil Guide</strong><br>
-                Wellness app built using Flutter, REST APIs, Firebase Auth, AWS.
+                <!-- Wellness app built using Flutter, REST APIs, Firebase Auth, AWS. -->
+                Developed a cross-platform health and wellness app using Flutter, featuring natural remedies, recipes,
+                treatments, and blend-based therapies. Integrated RESTful APIs (PHP & AWS), implemented Firebase
+                authentication and cloud storage, and published/maintained the app on the Play Store with a clean,
+                responsive UI
                 <br>
-                <a href="#" class="footer-btn">The Essential Life – Oil Guide</a>
+                <a href="https://play.google.com/store/apps/details?id=com.totalwellnessmedia.essentiallife&pcampaignid=web_share"
+                    class="footer-btn">The Essential Life – Oil Guide</a>
             </p>
 
             <p><strong>2. Xyonz – Location-Based Storytelling App</strong><br>
-                Built interactive maps, audio stories & dynamic API updates.
+                <!-- Built interactive maps, audio stories & dynamic API updates. -->
+                Developed the Xyonz mobile app using Flutter for Android and iOS, delivering location-based storytelling
+                around Utah’s historical landmarks. Integrated interactive maps with story pins, audio narratives, and
+                usergenerated story submissions. Implemented REST APIs for dynamic content and real-time updates,
+                ensuring
+                smooth multimedia and location-based UX. Collaborated with an 8-member team using agile
+                methodologies
                 <br>
-                <a href="#" class="footer-btn">Xyonz</a>
+                <a href="https://play.google.com/store/apps/details?id=com.tdr.trevorrobert&pcampaignid=web_share"
+                    class="footer-btn">Xyonz</a>
             </p>
 
             <p><strong>3. Imadeya – Alcohol Marketplace App</strong><br>
-                Liquor marketplace built using Flutter + Shopify.
+                <!-- Liquor marketplace built using Flutter + Shopify. -->
+                This is an app that allows you to shop based on the reviews of alcohol lovers with similar
+                sensibilities. Enjoy
+                shopping for more than 5,000 types of sake, wine, shochu, whiskey, and more anytime, anywhere. Mobile
+                app
+                Develop with Flutter framework & Flutter Packages. API ( Backend API develop on PHP & shopify
+                configuration)
+
                 <br>
-                <a href="#" class="footer-btn">IMADEYA App</a>
+                <a href="https://play.google.com/store/apps/details?id=com.imadeya.app&pcampaignid=web_share"
+                    class="footer-btn">IMADEYA App</a>
             </p>
 
             <p><strong>4. Financial Freedom App</strong><br>
@@ -266,17 +356,22 @@
                 Full e-commerce grocery app using Flutter + MongoDB.
             </p>
 
-            <a class="btn btn-outline" href="https://github.com/SunilZest">OPEN MY PORTFOLIO</a>
+
 
             <h2>Hobbies & Interests</h2>
             <p>Socializing, learning new tech, video editing, cooking, watching TV.</p>
 
             <h2>Address</h2>
             <p>201 Prominent East Winds, Kadugodi, Whitefield, Bengaluru 560067<br>
-                <a href="#">Open in Maps</a>
+                <!-- <a href="Sunil_CV2025.pdf">Open in Maps</a> -->
             </p>
 
-            <a class="btn btn-outline" href="#">DOWNLOAD RESUME</a>
+            <!-- <a class="btn btn-outline" href="Sunil_CV2025.pdf">DOWNLOAD RESUME</a>
+            <a class="btn btn-outline" href="https://github.com/SunilZest">OPEN MY PORTFOLIO</a> -->
+            <div class="button-row">
+                <a class="btn btn-outline" href="Sunil_CV2025.pdf">DOWNLOAD RESUME</a>
+                <a class="btn btn-outline" href="https://github.com/SunilZest">OPEN MY PORTFOLIO</a>
+            </div>
         </div>
 
     </div>
@@ -286,7 +381,10 @@
     <div class="footer">
         <a href="https://github.com/SunilZest">GitHub</a> |
         <a href="https://www.linkedin.com/in/sunilkumarsbg">LinkedIn</a>
-        <p style="margin-top: 10px; color: #777;">© 2025-2026 Sunil Kumar</p>
+        <h2>Reach Me At:</h2>
+        <p style="margin-top: 10px; color: #777;">WhatsApp:07541951162 <br> Email: sunilkumarsahibganj@gmail.com /
+            sunilkumarsbg@hotmail.com</p>
+        <p style="margin-top: 10px; color: #777;">©2026 Sunil Kumar</p>
     </div>
 
 </body>
